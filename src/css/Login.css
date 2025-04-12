@@ -1,0 +1,84 @@
+.right-image {
+    background-color: #ededed;
+    height: 100vh;
+  }
+  
+  .right-image img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  form input {
+    height: 45px;
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    height: 45px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #8cccc9;
+    border: #8cccc9;
+  }
+  
+  /* Add this */
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:focus {
+    background-color: #5ca19e !important;
+    border-color: #5ca19e !important;
+  }
+  
+  .title-login {
+    font-weight:bolder;
+   
+    font-family: sans-serif;
+  }
+  
+  .form-login {
+    background-color: #ffffff;
+  }
+  
+
+  .input-underline {
+    border: none;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .input-underline:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #000000;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 18px;
+  }
+  
+
+  .form-login input.form-control {
+    background-color: #ffffff !important;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    color: #000000;
+    box-shadow: none;
+  }
+  
+  .form-login input.form-control:focus {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #000000;
+    outline: none;
+    box-shadow: none;
+  }
+  

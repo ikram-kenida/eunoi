@@ -1,0 +1,26 @@
+.Testimonials{
+    background-color: white;
+}
+
+
+.Testimonials h1{
+    margin-bottom: 40px !important;
+    color: #5ca19e;
+    font-weight: 700;
+    line-height: 6vh;
+    letter-spacing: 1px;
+}
+.Testimonials .comment{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    min-height: 250px;
+}
+.Testimonials .comment .profileImg{
+    margin-top: -80px !important;
+    object-fit: cover;
+}
+.Testimonials p{
+    color: black;
+     font-weight: 600;
+     letter-spacing: 1.3px;
+}

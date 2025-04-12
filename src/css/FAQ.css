@@ -1,0 +1,24 @@
+.faq{
+    background-color: #eae9e8;
+    
+}
+.faq h1{
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.faq .question:hover{
+    cursor: pointer;
+}
+.faq .answer{
+    color: #000000 !important;
+    font-weight: 500;
+}
+.faq hr {
+    border: none;
+    border-bottom: 3px solid #beb5ad;
+    height: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  

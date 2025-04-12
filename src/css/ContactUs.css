@@ -1,0 +1,58 @@
+.contact-container {
+    min-height: 100vh;
+    background-color: #f9f9fb;
+   
+  }
+  
+ .contact-container .form-section {
+    background-color: whitesmoke;
+    min-height: 100vh;
+  }
+  
+  .contact-container .illustration-section {
+    background-color: rgba(140, 204, 201, 0.5); /* fully opaque */
+    min-height: 100vh;
+  }
+  
+  .contact-container .light-input {
+    background-color: rgba(140, 204, 201, 0.5); /* fully opaque */
+
+    border: none;
+    padding: 10px 15px;
+  }
+  
+  .contact-container .btn-teal {
+    background-color: #369694;
+    color: white;
+  }
+  
+  .contact-container  .btn-teal:hover {
+    background-color: #00796b;
+    color: white;
+  }
+  
+  .contact-container  .text-teal {
+    color: #00897b;
+  }
+  
+  .contact-container  .dot {
+    color: #00897b;
+    font-weight: bold;
+  }
+  .contact-container .form-label {
+    margin-bottom: 6px;
+    font-weight: 300;
+    color: #887bb0;
+  }
+.contact-container .phone_contact{
+    display: none !important;
+}
+  @media screen and (max-width: 768px) {
+   .contact-container .illustration-section {
+      display: none !important; 
+    }
+    .contact-container .phone_contact{
+        display: block !important;
+    }
+  }
+  

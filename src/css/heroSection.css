@@ -1,0 +1,28 @@
+.heroSection{
+    background-color: #83c3c0 !important;
+    min-height: 100vh;
+}
+.heroSection .content{
+    margin-top: 10vh !important;
+}
+.heroSection .h1 {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 7vh;
+}
+.heroSection .p{
+    color: #4c5c68;
+    letter-spacing: 1px;
+    line-height: 5vh;
+}
+.heroSection .readmore{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    padding-top: 12px ;
+    padding-bottom: 12px;
+}
+.heroSection .icon{
+    vertical-align: middle;
+    color: white;
+    font-size: 20px !important;
+}

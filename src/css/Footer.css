@@ -1,0 +1,78 @@
+.footer-section {
+    background-color: #292f33;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+  }
+  
+  .footer-section .footer-logo {
+    width: 150px;
+  }
+  
+  .footer-section .footer-links .footer-link {
+    color: #64d1cd;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1rem;
+  }
+  
+  .footer-section .footer-links .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section  .icon-circle {
+    width: 38px;
+    height: 38px;
+    background-color: #8cccc9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+  }
+  
+  .footer-section .icon-circle:hover {
+    background-color: #007d7a;
+  }
+  
+  .footer-section .text-teal {
+    color: #64d1cd;
+  }
+  
+  .footer-section  .footer-line {
+    border-top: 1px solid #64d1cd;
+  }
+  
+  /* Email Section */
+  .footer-section .email-container {
+    width: 100%;
+  }
+  
+  .footer-section .email-box {
+    background-color: white;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .footer-section  .email-icon {
+    color: #64d1cd;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .footer-section .email-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+  
+  .footer-section .email-input::placeholder {
+    color: #a0a0a0;
+  }
+  

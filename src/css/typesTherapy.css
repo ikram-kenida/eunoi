@@ -1,0 +1,55 @@
+.typesTherapy{
+    background-color: #eae9e8 !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+.typesTherapy h1{
+    color: #4c5c68;
+    font-weight: 700;
+    line-height: 6vh;
+    letter-spacing: 1px;
+}
+/* Base styles for the elements */
+.typesTherapy .pomodoro,
+.typesTherapy .todo,
+.typesTherapy .chatboot {
+    border-radius: 15px;
+    height: 380px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+
+/* Specific background colors */
+.typesTherapy .pomodoro {
+    background-color: #bfd7ed;
+}
+
+.typesTherapy .todo {
+    background-color: #d9cfe8;
+}
+
+.typesTherapy .chatboot {
+    background-color: #8cccc9;
+}
+
+/* Lift-up effect on hover */
+.typesTherapy .pomodoro:hover,
+.typesTherapy .todo:hover,
+.typesTherapy .chatboot:hover {
+    transform: translateY(-10px); /* Moves the element 10px up */
+}
+
+.typesTherapy a{
+    text-decoration: none !important;
+}
+.typesTherapy p{
+    margin-top: 30px;
+    color: #4c5c68;
+    font-weight: 700;
+    font-size: larger;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 1.3px;
+}
+.typesTherapy .icon{
+    vertical-align: middle;
+    color: #8cccc9;
+    font-size: 30px !important;
+}
