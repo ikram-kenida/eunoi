@@ -9,7 +9,7 @@ function CustomNavbar() {
   return (
     <Navbar expand="lg" bg="transparent" className=" navigation_bar mx-3  mb-3 p-2">
       <Container>
-        <img src={Logo} alt="Eunoia" style={{ height: '120px', marginRight: '8px' }} />
+     <a href='/'><img src={Logo} alt="Eunoia" style={{ height: '120px', marginRight: '8px' }} /></a>   
         
         <Navbar.Toggle />
         <Navbar.Collapse className='collapse p-3'>
@@ -25,8 +25,8 @@ function CustomNavbar() {
   }
   id="advice-dropdown"
 >
-  <NavDropdown.Item href="#advice1">Anxiety</NavDropdown.Item>
-  <NavDropdown.Item href="#advice2">Depression</NavDropdown.Item>
+  <NavDropdown.Item href="/advice">Anxiety</NavDropdown.Item>
+  <NavDropdown.Item href="/advice">Depression</NavDropdown.Item>
 </NavDropdown>
 
 <NavDropdown
@@ -38,8 +38,8 @@ function CustomNavbar() {
   }
   id="time-dropdown"
 >
-  <NavDropdown.Item href="#tm1">Focus</NavDropdown.Item>
-  <NavDropdown.Item href="#tm2">Productivity</NavDropdown.Item>
+  <NavDropdown.Item href="/calendar">Focus</NavDropdown.Item>
+  <NavDropdown.Item href="/Task">Productivity</NavDropdown.Item>
 </NavDropdown>
 
           </Nav>

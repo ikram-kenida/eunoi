@@ -1,0 +1,499 @@
+/* src/styles.css */
+
+/* Global Styles */
+.app * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+  }
+  
+  .app body {
+    background-color: white; /* Light teal background */
+  }
+  
+  .app .app {
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .app header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #8cccc9; /* Light teal */
+    color: white;
+    padding: 10px 50px;
+    max-height: 70px;
+    border-radius: 50px;
+    position: relative;
+  }
+  
+  .app header h1 {
+    font-size: 24px;
+  }
+  
+  .app header img {
+    margin-top: 20px;
+    width: 300px;
+    height: 170px; /* Adjust the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: -20px;
+  }
+  
+  .app header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .app header nav ul li {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .app  header nav ul li::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .app  header nav ul li.active::after {
+    opacity: 1; /* Show dot for active tab */
+  }
+  
+  .app  header nav ul li i {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .app header nav ul li.active {
+    color: white; /* Highlight active tab */
+  }
+  
+  /* Timer Section */
+  .app .timer-section {
+    background-color: #d3f5f3; /* Light teal */
+    padding: 10px 50px 50px 50px;
+    margin: 10px 170px 5px 170px;
+  }
+  
+  .app .timer {
+    background-color: #d3f5f3;
+    text-align: center;
+  }
+  
+  .app .tasks-section {
+    background-color: none;
+    margin-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px; /* Space between START button and TASKS */
+    text-align: left; /* Align TASKS to the left */
+  }
+  
+  .app  .tasks-section p {
+    font-weight: bold;
+    color: white; /* Dark gray text */
+    font-size: 18px; /* Adjust font size as needed */
+  }
+  
+  .app .line {
+    width: 100%; /* Full width of the container */
+    height: 3px; /* Thin line */
+    background-color: white; /* Light teal line */
+    margin-top: 5px; /* Space between TASKS text and the line */
+  }
+  
+  .app .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .app .tabs button {
+    background-color: #d3f5f3;
+    border: none;
+    color: #5ca19e; /* Dark gray text */
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 19px; /* Ensure text size is appropriate */
+    text-align: center;
+  }
+  
+  /* Styles for the active tab */
+  .app  .tabs button.active-tab {
+    background-color: #8cccc9; /* Darker teal */
+    color: white; /* White text for active tab */
+  }
+  
+  .app .controls {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+  }
+  
+  .app .controls button {
+    background-color: transparent; /* Light teal */
+    color: white;
+    border: none;
+    margin-top: -30px;
+    padding: 0; /* Adjust vertical padding, remove horizontal padding */
+    width: 200px; /* Set fixed width */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 150px; /* Ensure text size is appropriate */
+    text-align: center; /* Center the text inside the button */
+  }
+  
+  .app .controls span {
+    margin-top: 0px;
+    font-size: 100px;
+    font-weight: bold;
+    color: white; /* Dark gray text */
+  }
+  
+  .app .text {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    margin-top: -30px;
+  }
+  
+  .app .start-button {
+    background-color: #8cccc9; /* Darker teal */
+    color: white;
+    border: none;
+    padding: 20px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .app .task-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .app .task-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* Add Task Modal */
+  .app .add-task-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app .add-task-modal form {
+    background-color: #8cccc9; /* Light teal */
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+  }
+  
+  .app  .add-task-modal h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white; /* Dark gray text */
+  }
+  
+  .app .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded input fields */
+    overflow: hidden; /* Ensure the icon stays within the rounded bounds */
+  }
+  
+  .app .input-group input,
+  .app .input-group select {
+  
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 5px 10px 50px;
+    border: none;
+    border-radius: 20px; /* Match the overall border-radius */
+    width: 80%; /* Adjust width to fit the icon */
+    background-color: white; /* White background for inputs */
+  }
+  
+  
+  
+  .app .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .app .buttons button {
+    background-color: white; /* White background for buttons */
+    color: #4c5c68; /* Dark gray text */
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px; /* Rounded buttons */
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .app  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Placeholder Styling */
+  .app .input-group input::placeholder {
+    color: rgb(90, 82, 82); /* Set placeholder text color to black */
+  }
+  
+  /* Styling for the "Add Task" button */
+  .app  .add-task-button {
+    background-color: #d3f5f3; /* Light teal */
+    color: #5ca19e; /* Darker teal */
+    border: none;
+    margin-top: 20px;
+    margin-left: 25%;
+    padding: 10px 210px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+    font-size: 18px;
+  }
+  
+  .app  .add-task-button .icon {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .app .circle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Adjust the size of the circle */
+    height: 30px; /* Adjust the size of the circle */
+    border-radius: 50%; /* Makes the container circular */
+    background-color: #5ca19e;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .app.finish-button {
+    background-color: #8cccc9; /* Darker teal */
+    color: white;
+    border: none;
+    padding: 20px 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(233, 68, 68);
+  }
+  
+  /* Task List Styles */
+  .app .task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .app .task-list li {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #4c5c68; /* Dark gray text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; /* Make tasks clickable */
+  }
+  
+  .app .task-list li:hover {
+    background-color: #d3f5f3; /* Lighter hover effect */
+  }
+  
+  .app .task-list li.selected {
+    background-color: #8cccc9; /* Darker teal for selected task */
+    color: white; /* White text for selected task */
+  }
+  
+  /* Task Title (Strong Element) */
+  .app .task-list li strong {
+    color: #5ca19e; /* Dark teal for task title */
+    font-weight: bold;
+  }
+  
+  /* Task Date and Subject */
+  .app .task-list li span {
+    color: #78b3b0; /* Light gray for date and subject */
+    font-size: 20px; /* Smaller font size */
+   /* Italicize the text */
+  }
+  /* Overlay Styles */
+  .app .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    z-index: 999; /* Ensure it covers everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app .finish-button-overlay {
+    background-color: white; /* White background for the button */
+    color: #4c5c68; /* Dark gray text */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px; /* Rounded buttons */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000; /* Ensure the button is above the overlay */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .app  header img {
+      width: 250px;
+      height: auto;
+    }
+  
+    .app  .timer-section {
+      margin: 10px 50px 5px 50px;
+    }
+  
+    .app  .tasks-section {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .app  .add-task-modal form {
+      width: 80%;
+    }
+  
+    .app  .add-task-button {
+      margin-left: 25%;
+      padding: 10px 150px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .app  header img {
+      width: 200px;
+      height: auto;
+    }
+  
+    .app .tabs button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    .app .controls span {
+      font-size: 80px;
+    }
+  
+    .app  .start-button {
+      padding: 15px 50px;
+      font-size: 16px;
+    }
+  
+    .app  .finish-button {
+      margin-top: 100px;
+      padding: 15px 50px;
+      font-size: 16px;
+    }
+  
+    .app  .add-task-modal form {
+      width: 90%;
+    }
+  
+    .app .add-task-button {
+      margin-left: 25%;
+      padding: 10px 100px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app  header img {
+      width: 150px;
+      height: auto;
+    }
+  
+    .app  header nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .app   .tabs {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .app  .controls span {
+      font-size: 60px;
+    }
+  
+    .app  .start-button {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  
+    .app  .finish-button {
+      margin-top: 50px;
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  
+    .app  .add-task-modal form {
+      width: 100%;
+    }
+  
+    .app  .add-task-button {
+      margin-left: 25%;
+      padding: 10px 50px;
+      font-size: 12px;
+    }
+  }

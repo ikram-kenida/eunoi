@@ -11,7 +11,7 @@
 /* Base styles for the elements */
 .typesTherapy .pomodoro,
 .typesTherapy .todo,
-.typesTherapy .chatboot {
+.typesTherapy .chatboot , .typesTherapy .career  {
     border-radius: 15px;
     height: 380px;
     transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
@@ -29,11 +29,13 @@
 .typesTherapy .chatboot {
     background-color: #8cccc9;
 }
-
+.typesTherapy .career{
+    background-color: pink;
+}
 /* Lift-up effect on hover */
 .typesTherapy .pomodoro:hover,
 .typesTherapy .todo:hover,
-.typesTherapy .chatboot:hover {
+.typesTherapy .chatboot:hover , .typesTherapy .career:hover {
     transform: translateY(-10px); /* Moves the element 10px up */
 }
 
@@ -52,4 +54,8 @@
     vertical-align: middle;
     color: #8cccc9;
     font-size: 30px !important;
+}
+
+.typesTherapy2{
+    background-color: white !important;
 }
